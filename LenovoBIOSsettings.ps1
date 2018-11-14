@@ -16,11 +16,20 @@ $BIOSSettings = @(
     "IPv4NetworkStack,Enable",
     "IPv6NetworkStack,Enable",
     "UefiPxeBootPriority,IPv4First",
-    "ThunderboltSecurityLevel,NoSecurity",
+    "ThunderboltSecurityLevel,NoSecurity",    #UserAuthorization  in the future
     "PreBootForThunderboltDevice,Enable",
     "WakeByThunderbolt,Enable",
     "AMTControl,Disable",
-    "ThunderboltBIOSAssistMode,Enable"  #Disable this when we go to 1709!!!
+    "ThunderboltBIOSAssistMode,Disable"
+	"MACAddressPassThrough, Enable"
+	"USBBIOSSupport, Enable"
+	"AdaptiveThermalManagementAC, MaximizePerformance"
+	"AdaptiveThermalManagementBattery, Balanced"
+	"TXTFeature, Disable"
+	"PhysicalPresenceForTpmProvision, Disable"
+	"PhysicalPresenceForTpmClear, Disable"
+	"BootMode, Quick"
+
 
 )
  
