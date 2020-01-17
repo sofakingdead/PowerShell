@@ -6,6 +6,7 @@ if exist "C:\Users\Administrator\Desktop\Dashlane.lnk" del /f /q "C:\Users\Admin
 if exist "C:\Users\Administrator\Desktop\Uplay.lnk" del /f /q "C:\Users\Administrator\Desktop\Uplay.lnk"
 if exist "C:\Users\Administrator\Desktop\Discord.lnk" del /f /q "C:\Users\Administrator\Desktop\Discord.lnk"
 if exist "C:\Users\Administrator\Desktop\Microsoft Edge.lnk" del /f /q "C:\Users\Administrator\Desktop\Microsoft Edge.lnk"
+
 :: Delete tasks
 Schtasks /Delete /tn "GoogleUpdateTaskMachineUA" /f
 Schtasks /Delete /tn "GoogleUpdateTaskMachineCore" /f
@@ -18,10 +19,14 @@ Schtasks /Delete /tn "NvTmRepCR1_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}" /f
 Schtasks /Delete /tn "NvTmRepCR2_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}" /f
 Schtasks /Delete /tn "NvTmRepCR3_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}" /f
 Schtasks /Delete /tn "NvProfileUpdaterDaily_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}" /f
+::Schtasks /Delete /tn "NvProfileUpdaterOnLogon_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}" /f
 Schtasks /Delete /tn "\Microsoft\XblGameSave\XblGameSaveTask" /f
 
 if exist "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\ImageGlass\ImageGlass.lnk" move "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\ImageGlass\ImageGlass.lnk" "C:\ProgramData\Microsoft\Windows\Start Menu\Programs"
 rmdir "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\ImageGlass\" /s /Q
+
+if exist "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\PDFsam Basic\PDFsam Basic.lnk" move "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\PDFsam Basic\PDFsam Basic.lnk" "C:\ProgramData\Microsoft\Windows\Start Menu\Programs"
+rmdir "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\PDFsam Basic" /s /Q
 
 if exist "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\7-Zip\7-Zip File Manager.lnk" move "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\7-Zip\7-Zip File Manager.lnk" "C:\ProgramData\Microsoft\Windows\Start Menu\Programs"
 rmdir "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\7-Zip\" /s /Q
@@ -63,3 +68,12 @@ rmdir "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Progr
 
 if exist "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\ImageGlass\ImageGlass.lnk" move "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\ImageGlass\ImageGlass.lnk" "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs"
 rmdir "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\ImageGlass" /s /Q
+
+if exist "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\MSI Afterburner\MSI Afterburner.lnk" move "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\MSI Afterburner\MSI Afterburner.lnk" "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs"
+rmdir "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\MSI Afterburner" /s /Q
+
+if exist "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\RivaTuner Statistics Server\RivaTuner Statistics Server.lnk" move "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\RivaTuner Statistics Server\RivaTuner Statistics Server.lnk" "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs"
+rmdir "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\RivaTuner Statistics Server" /s /Q
+
+if exist "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Discord Inc\Discord.lnk" move "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Discord Inc\Discord.lnk" "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs"
+rmdir "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Discord Inc" /s /Q
